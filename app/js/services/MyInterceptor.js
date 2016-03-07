@@ -10,9 +10,9 @@ homeProjectApp.factory('MyInterceptor', ['$q', function($q) {
 
         request: function(config) {
 
-            debugger;
-            console.log("in request interceptor ...");
-            console.log(config);
+            //debugger;
+            //console.log("in request interceptor ...");
+            //console.log(config);
 
             return config;
         }
