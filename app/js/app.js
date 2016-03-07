@@ -27,6 +27,13 @@ var homeProjectApp = angular.module('homeProjectApp', ['ngResource', 'ngRoute'])
 
         });
 
+        $routeProvider.when('/view/:param1', {
+
+            templateUrl: 'templates/view.html',
+            controller: 'ViewController'
+
+        });
+
         $routeProvider.when('/view', {
             templateUrl: 'templates/view.html',
             controller: 'ViewController'
