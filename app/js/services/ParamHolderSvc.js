@@ -16,8 +16,9 @@ homeProjectApp.factory('paramHolderSvc', function($http) {
         setToken: function(val) {
             token = val;
             //debugger;
+            console.log("MAKING HTTP CALL TO GET TOKEN DATA ...");
 
-            return $http.get('http://localhost:8811/gettoken/' + token)
+            return $http.get('http://localhost:8811/gettokenv2/' + token)
                 .then(function(response) {
                     console.log(response);
                     //debugger;

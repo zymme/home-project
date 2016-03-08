@@ -7,30 +7,29 @@ homeProjectApp.controller('ViewController', function ViewController($scope, $rou
     console.log("In view controller");
 
 
-    //debugger;
+    if(paramHolderSvc.getPolnum() === null) {
 
-    if($route.current.params.param1 !== undefined) {
-        //paramHolderSvc.setPolnum($route.current.params.param1);
-        paramHolderSvc.setToken($route.current.params.param1)
-            .then(function(data) {
-                $scope.p1 = paramHolderSvc.getPolnum();
-                $scope.p2 = paramHolderSvc.getOnlineSessId();
-            });
+        if($route.current.params.param1 !== undefined) {
+            //paramHolderSvc.setPolnum($route.current.params.param1);
+            paramHolderSvc.setToken($route.current.params.param1)
+                .then(function(data) {
+                    $scope.p1 = paramHolderSvc.getPolnum();
+                    $scope.p2 = paramHolderSvc.getOnlineSessId();
+                });
+        }
+        else {
+            $scope.p1 = paramHolderSvc.getPolnum();
+            $scope.p2 = paramHolderSvc.getOnlineSessId();
+        }
+
     }
     else {
+
         $scope.p1 = paramHolderSvc.getPolnum();
         $scope.p2 = paramHolderSvc.getOnlineSessId();
+
     }
 
-
-    //if($route.current.params.param2 !== undefined) {
-    //    paramHolderSvc.setOnlineSessId($route.current.params.param2);
-    //}
-
-
-
-    //$scope.p1 = paramHolderSvc.getPolnum();
-    //$scope.p2 = paramHolderSvc.getOnlineSessId();
 
 
     // so location.path will get us to the root of the path and strip the query params from url preventing
