@@ -1,6 +1,6 @@
 'use strict';
 
-var homeProjectApp = angular.module('homeProjectApp', ['ngResource', 'ngRoute'])
+var homeProjectApp = angular.module('homeProjectApp', ['ngResource', 'ngRoute', 'ui.grid'])
     .config(function($routeProvider) {
 
         $routeProvider.when('/projects', {

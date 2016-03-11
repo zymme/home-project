@@ -83,3 +83,8 @@ select, textarea {
 div .completeditem {
     background-color: lightsalmon;
 }
+
+.grid {
+    width: 500px;
+    height: 250px;
+}

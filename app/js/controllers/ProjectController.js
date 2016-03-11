@@ -8,7 +8,7 @@ homeProjectApp.controller('ProjectController', function ProjectController($scope
 
     $scope.projects = [
         {
-            name: 'Clean up downstairs - box up moving items and stack in laundry room',
+            name: 'Clean up downstairs',
             date_started: null,
             date_completed: null,
             status: 'Not Started',

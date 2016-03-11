@@ -12,6 +12,7 @@
   "author": "Joe Eames & Jim Cooper",
   "license": "ISC",
   "dependencies": {
+    "angular-ui-grid": "^3.1.1",
     "body-parser": "1.13.1",
     "express": "4.13.0"
   }
